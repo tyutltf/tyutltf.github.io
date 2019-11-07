@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>洪卫的博客</title>
+  <title>雨轩恋的博客</title>
   
-  <subtitle>洪卫的博客</subtitle>
+  <subtitle>雨轩恋的博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tyutltf.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://tyutltf.github.io/</id>
   
   <author>
-    <name>洪卫</name>
+    <name>雨轩恋</name>
     
   </author>
   

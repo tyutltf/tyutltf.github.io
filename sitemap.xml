@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tyutltf.github.io/404.html</loc>
+    
+    <lastmod>2019-11-07T14:36:16.922Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tyutltf.github.io/tags/index.html</loc>
     
-    <lastmod>2019-11-07T13:14:22.524Z</lastmod>
+    <lastmod>2019-11-07T14:36:00.379Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/contact/index.html</loc>
+    
+    <lastmod>2019-11-07T14:08:34.606Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/about/index.html</loc>
+    
+    <lastmod>2019-11-07T14:08:11.723Z</lastmod>
     
   </url>
   
@@ -37,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://tyutltf.github.io/contact/index.html</loc>
-    
-    <lastmod>2019-11-07T13:14:22.514Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://tyutltf.github.io/categories/index.html</loc>
     
     <lastmod>2019-11-07T13:14:22.512Z</lastmod>
@@ -52,13 +66,6 @@
   
   <url>
     <loc>https://tyutltf.github.io/archives/index.html</loc>
-    
-    <lastmod>2019-11-07T13:14:22.511Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tyutltf.github.io/about/index.html</loc>
     
     <lastmod>2019-11-07T13:14:22.511Z</lastmod>
     
@@ -75,13 +82,6 @@
     <loc>https://tyutltf.github.io/AV/index.html</loc>
     
     <lastmod>2019-11-07T13:14:22.508Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tyutltf.github.io/404.html</loc>
-    
-    <lastmod>2019-11-07T13:14:22.507Z</lastmod>
     
   </url>
   
