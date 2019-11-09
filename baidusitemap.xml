@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tyutltf.github.io/2019/08/27/blog-open-source/</loc>
-    <lastmod>2019-11-07</lastmod>
+    <loc>https://tyutltf.github.io/2019/09/15/test-demo/</loc>
+    <lastmod>2019-11-09</lastmod>
+  </url>  <url>
+    <loc>https://tyutltf.github.io/2019/10/09/python-virtual/</loc>
+    <lastmod>2019-11-09</lastmod>
+  </url>  <url>
+    <loc>https://tyutltf.github.io/2019/05/09/beipiao/</loc>
+    <lastmod>2019-11-09</lastmod>
+  </url>  <url>
+    <loc>https://tyutltf.github.io/2019/11/09/xss-protect/</loc>
+    <lastmod>2019-11-09</lastmod>
   </url>
 </urlset>

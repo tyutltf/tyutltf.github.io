@@ -4,11 +4,36 @@
   
     
     <entry>
-      <title>博客开源</title>
-      <link href="/2019/08/27/blog-open-source/"/>
-      <url>/2019/08/27/blog-open-source/</url>
+      <title>XSS和CSRF保护</title>
+      <link href="/2019/11/09/xss-protect/"/>
+      <url>/2019/11/09/xss-protect/</url>
       
-        <content type="html"><![CDATA[<h1 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h1><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/shw2018/cdn/master/blog_files/img/Blog-Open-Source/blog-demo1.gif" alt="演示Demo"></p><h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的<code>blog</code>网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎PR！最后，我们还是给这个开源小项目取个名字吧，就叫<a href="https://github.com/shw2018/hexo-blog-fly.git" target="_blank" rel="noopener">hexo-blog-fly</a>吧，怎么样？&lt;&lt;&lt;&lt;&lt;<a href="https://github.com/shw2018/hexo-blog-fly" target="_blank" rel="noopener">源代码下载</a>&gt;&gt;&gt;&gt;&gt;</p><p>本博客基于<code>Hexo</code>框架搭建，用到<a href="https://github.com/shw2018/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题, 并在此基础之上做了很多修改，修复了一些bug，增加了一些新的特性和功能，博客地址：<a href="https://shw2018.github.io/" target="_blank" rel="noopener">https://shw2018.github.io</a>，博客演示：<a href="https://sunhwee.com" target="_blank" rel="noopener">sunhwee.com</a>。</p><hr><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p><strong>原主题特性</strong>:</p><ul><li><p>简单漂亮，文章内容美观易读</p></li><li><p><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</p></li><li><p>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</p></li><li><p>首页轮播文章及每天动态切换 <code>Banner</code> 图片</p></li><li><p>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</p></li><li><p>时间轴式的归档页</p></li><li><p><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</p></li><li><p>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</p></li><li><p>可自定义的数据的友情链接页面</p></li><li><p>支持文章置顶和文章打赏</p></li><li><p>支持 <code>MathJax</code></p></li><li><p><code>TOC</code> 目录</p></li><li><p>可设置复制文章内容时追加版权信息</p></li><li><p>可设置阅读文章时做密码验证</p></li><li><p><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</p></li><li><p>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</p></li><li><p>支持在首页的音乐播放和视频播放功能</p><p><strong>增加的工作或特性(未打钩的是已做但还没更新到源码的)</strong>:</p></li><li><p>修改了原主题的一些很多<code>bug</code>   2019.08.05</p></li><li><p>加入图片懒加载功能，在根目录配置文件开启和关闭    2019.08.09</p></li><li><p>增加<code>留言板</code>功能          2019.08.05</p></li><li><p>在关于板块,加入<code>简历</code>功能页   2019.08.05</p></li><li><p>增加视听[视觉听觉影音]板块       2019.08.10</p></li><li><p>支持<code>emoji</code>表情，用<code>markdown emoji</code>语法书写直接生成对应的能<strong>跳跃</strong>的表情。  2019.08.10</p></li><li><p>增加网站运行时间显示  2019.08.10</p></li><li><p>增加<code>动漫模型</code>     2019.08.10</p></li><li><p>整体替换Banner图片和文章特色图片   2019.08.10</p></li><li><p>增加分类<code>相册</code>功能         2019.08.29</p></li><li><p>去掉标签页,将其合并至<code>分类</code>页中                2019.09.01</p></li><li><p>修改了一些控件的参数   2019.09.01</p></li><li><p>修改部分样式,比如: 文章卡片,固定高度,使其不至于因为文章摘要的长短不同导致卡片大小不一使页面布局很不美观,类似的还有友链卡片,优化了页面内容布局,视觉更整齐美观          2019.09.01</p></li><li><p>解决首页文章列表卡片上方 <code>border-radius</code>圆角失效的bug  2019.09.01</p></li><li><p>添加页面樱花飘落动效            2019.09.09</p></li><li><p>添加鼠标点击烟花爆炸动效   2019.09.09</p></li><li><p>加入天气接口控件   2019.09.09</p></li><li><p>加入鼠标点击文字特效   2019.09.10</p></li><li><p>添加页面雪花飘落动效            2019.09.10</p></li><li><p>添加在线聊天插件            2019.09.12</p></li><li><p>持续更新…</p></li></ul><hr><p><strong>简单使用方法：</strong></p><ol><li><code>star</code> 本项目</li><li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li><li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li><li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li><li>修改配置信息，改成自己的信息</li><li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li></ol><blockquote><p><strong>更多详情教程，强烈推荐看我写的：<a href="https://sunhwee.com/posts/6e8839eb.html" target="_blank" rel="noopener">Hexo+Github博客搭建完全教程</a></strong></p></blockquote><blockquote><p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p></blockquote><p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p><table>  <tbody><tr>    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h3 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h3><blockquote><p>xss攻击即跨站脚本攻击，攻击者将通过恶意代码注入到被攻击者的网站中，用户一旦访问就会执行被注入的恶意脚本。例如在用户评论界面输入代码</p></blockquote><pre><code>&lt;script&gt;alert('hhhh')&lt;/script&gt;</code></pre><p>就会弹出 hhhh 字样。</p><h4 id="如何防护xss"><a href="#如何防护xss" class="headerlink" title="如何防护xss"></a>如何防护xss</h4><ul><li>HTML转义</li></ul><p>可以使用jinja2的escape函数对用户输入的数据进行转义。</p><ul><li>验证用户输入</li></ul><p>对用户输入的数据进行过滤</p><h3 id="CSRF攻击"><a href="#CSRF攻击" class="headerlink" title="CSRF攻击"></a>CSRF攻击</h3><p>如果用户访问了A网站后不退出，继续访问了危险的B网站，那么B网站就有可能获取A网站的cookie而伪装成A网站的用户来进行操作。</p><h4 id="主要防范措施"><a href="#主要防范措施" class="headerlink" title="主要防范措施"></a>主要防范措施</h4><ul><li>正确使用HTTP方法，提交数据时候使用POST。</li><li>使用CSRF令牌校验</li></ul><p>Flask有一个模块叫 flask_csrfprotect 这个模块可以用来防护CSRF攻击</p><pre><code>from flask_wtf.csrf import CSRFProtectapp.config['SECRET_KEY'] = os.urandom(24)CSRFProtect(app)</code></pre><p>在前端页面的form表单加入这一行代码即可</p><pre><code>&lt;input type="hidden" name="csrf_token" value="{{ csrf_token() }}" /&gt;</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Flask </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网站防护 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vscode下Python虚拟环境的安装</title>
+      <link href="/2019/10/09/python-virtual/"/>
+      <url>/2019/10/09/python-virtual/</url>
+      
+        <content type="html"><![CDATA[<p><strong>虚拟环境virtualenvwrapper</strong></p><ol><li>安装</li></ol><p>pip install virtualenv 首先得安装 virtualenv 库</p><p>pip install virtualenvwrapper-win</p><p>配置WORKON_HOME 环境变量</p><ol start="2"><li>创建虚拟环境</li></ol><p>mkvirtualenv textenv</p><p>创建虚拟环境并可以直接进入虚拟环境</p><ol start="3"><li>查看虚拟环境</li></ol><p>workon 可以查看虚拟环境</p><ol start="4"><li>进入虚拟环境</li></ol><p>workon textenv 进入虚拟环境</p><ol start="5"><li>安装依赖包</li></ol><p>pip install -r requirements.txt</p><ol start="6"><li>退出虚拟环境</li></ol><p>deactivate</p><ol start="7"><li>删除虚拟环境</li></ol><p>rmvirtualenv textenv</p><ol start="8"><li>将项目添加到工作目录</li></ol><p>python add tab 键</p><h3 id="以上步骤，在powershell里面-虚拟环境并没有出现，还缺少一步"><a href="#以上步骤，在powershell里面-虚拟环境并没有出现，还缺少一步" class="headerlink" title="以上步骤，在powershell里面 虚拟环境并没有出现，还缺少一步"></a>以上步骤，在powershell里面 虚拟环境并没有出现，还缺少一步</h3><p><a href="https://blog.csdn.net/Amio_/article/details/80229179" target="_blank" rel="noopener">看这里可以解决</a></p><blockquote><p>Ctrl + shift + p 打开工作区设置</p></blockquote><blockquote><p>选择在 seetings.json中编辑</p></blockquote><blockquote><p>输入 terminal.integrated.shellArgs.windows</p></blockquote><blockquote><p>配置 如下</p></blockquote><pre><code>{    "python.pythonPath": "D:\\workspace\\python_env\\easyreport\\Scripts\\python.exe",    "terminal.integrated.shellArgs.windows": [        "/k",        "D:\\workspace\\python_env\\easyreport\\Scripts\\activate"    ]}</code></pre><blockquote><p>大功告成</p></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -20,11 +45,57 @@
       
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> Virtual </tag>
             
-            <tag> Github </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python彩蛋</title>
+      <link href="/2019/09/15/test-demo/"/>
+      <url>/2019/09/15/test-demo/</url>
+      
+        <content type="html"><![CDATA[<h3 id="zen-of-python"><a href="#zen-of-python" class="headerlink" title="zen of python"></a>zen of python</h3><p>今天早上在公交上浏览博客的时候，发现了python里面的一个小彩蛋–zen of python 一首python之歌</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201904/1471003-20190418085714055-2104139307.png" alt="如下图"></p><p>是不是很简单，在python shell 里 输入 import this 就出来啦，有木有很神奇！！！</p><h3 id="全诗如下…"><a href="#全诗如下…" class="headerlink" title="全诗如下…"></a>全诗如下…</h3><p>The Zen of Python, by Tim Peters</p><p>Beautiful is better than ugly.</p><p>Explicit is better than implicit.</p><p>Simple is better than complex.</p><p>Complex is better than complicated.</p><p>Flat is better than nested.</p><p>Sparse is better than dense.</p><p>Readability counts.</p><p>Special cases aren’t special enough to break the rules.</p><p>Although practicality beats purity.</p><p>Errors should never pass silently.</p><p>Unless explicitly silenced.</p><p>In the face of ambiguity, refuse the temptation to guess.</p><p>There should be one– and preferably only one –obvious way to do it.</p><p>Although that way may not be obvious at first unless you’re Dutch.<br>Now is better than never.</p><p>Although never is often better than <em>right</em> now.</p><p>If the implementation is hard to explain, it’s a bad idea.</p><p>If the implementation is easy to explain, it may be a good idea.</p><p>Namespaces are one honking great idea – let’s do more of those!</p><h3 id="翻译如下…"><a href="#翻译如下…" class="headerlink" title="翻译如下…"></a>翻译如下…</h3><p>Python之禅 by Tim Peters</p><p>优美胜于丑陋（Python 以编写优美的代码为目标）</p><p>明了胜于晦涩（优美的代码应当是明了的，命名规范，风格相似）</p><p>简洁胜于复杂（优美的代码应当是简洁的，不要有复杂的内部实现）</p><p>复杂胜于凌乱（如果复杂不可避免，那代码间也不能有难懂的关系，要保持接口简洁）</p><p>扁平胜于嵌套（优美的代码应当是扁平的，不能有太多的嵌套）</p><p>间隔胜于紧凑（优美的代码有适当的间隔，不要奢望一行代码解决问题）</p><p>可读性很重要（优美的代码是可读的）</p><p>即便假借特例的实用性之名，也不可违背这些规则（这些规则至高无上）</p><p>不要包容所有错误，除非你确定需要这样做（精准地捕获异常，不写 except:pass 风格的代码）</p><p>当存在多种可能，不要尝试去猜测</p><p>而是尽量找一种，最好是唯一一种明显的解决方案（如果不确定，就用穷举法）</p><p>虽然这并不容易，因为你不是 Python 之父（这里的 Dutch 是指 Guido ）</p><p>做也许好过不做，但不假思索就动手还不如不做（动手之前要细思量）</p><p>如果你无法向人描述你的方案，那肯定不是一个好方案；反之亦然（方案测评标准）</p><p>命名空间是一种绝妙的理念，我们应当多加利用（倡导与号召）</p><h3 id="是不是很有意思呢"><a href="#是不是很有意思呢" class="headerlink" title="是不是很有意思呢~"></a>是不是很有意思呢<del>~</del></h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 彩蛋 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>北漂生活记录</title>
+      <link href="/2019/05/09/beipiao/"/>
+      <url>/2019/05/09/beipiao/</url>
+      
+        <content type="html"><![CDATA[<pre><code>早上六点，随着一阵”狂浪是一种态度，狂浪在起起伏伏，狂浪，狂浪“悦耳的铃声。我不情愿的睁开了双眼，来到了如图所示的卫生间</code></pre><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190514154237900.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0ZjIwMTgzNA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></h2><pre><code>经过二十分钟的洗漱，我出了家门，开始坐六点半的公交。经过一个半的车程，终于从天通苑来到了北三环的公司。八点多了，在食堂吃完早餐后，来到办公室，开始摸鱼。</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190514154307676.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0ZjIwMTgzNA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><hr><pre><code>摸鱼仨小时，十一点半了，到饭点了欸，次饭次饭。次完后，午睡一个小时后继续摸鱼。上上谷歌，查查资料。</code></pre><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190514154322960.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x0ZjIwMTgzNA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><hr><pre><code>不知不觉五点半了，下班了欸。恰了晚饭后，接着坐公交准备回家。晚八点，夜色已深，终于回到了自己的小窝。洗个舒服的热水澡，躺在被窝里，刷会微博，看会技术博客，或者打几盘游戏。时间慢慢的来到了十点半，该睡觉了，晚安。平常又普通的一天结束了。</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 北漂 </tag>
             
         </tags>
       

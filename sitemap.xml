@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tyutltf.github.io/2019/09/15/test-demo/</loc>
+    
+    <lastmod>2019-11-09T07:15:29.186Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/10/09/python-virtual/</loc>
+    
+    <lastmod>2019-11-09T07:11:58.696Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/05/09/beipiao/</loc>
+    
+    <lastmod>2019-11-09T07:09:39.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/11/09/xss-protect/</loc>
+    
+    <lastmod>2019-11-09T07:05:43.250Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tyutltf.github.io/404.html</loc>
     
     <lastmod>2019-11-07T14:36:16.922Z</lastmod>
@@ -68,13 +96,6 @@
     <loc>https://tyutltf.github.io/archives/index.html</loc>
     
     <lastmod>2019-11-07T13:14:22.511Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tyutltf.github.io/2019/08/27/blog-open-source/</loc>
-    
-    <lastmod>2019-11-07T13:14:22.510Z</lastmod>
     
   </url>
   

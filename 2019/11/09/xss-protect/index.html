@@ -1,16 +1,18 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
-    <!-- shw2018 洪卫  modify 2019.08.15-->
+<!-- shw2018 洪卫  modify 2019.08.15-->
 
 
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="博客开源, Python Flask Scrapy Pandas 雨轩恋 Numpy 深度学习">
+    <meta name="keywords" content="XSS和CSRF保护, Python Flask Scrapy Pandas 雨轩恋 Numpy 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="效果演示
-简短介绍倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的blog网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，">
+    <meta name="description" content="XSS
+xss攻击即跨站脚本攻击，攻击者将通过恶意代码注入到被攻击者的网站中，用户一旦访问就会执行被注入的恶意脚本。例如在用户评论界面输入代码
+
+&amp;lt;script&amp;gt;alert(&#39;hhhh&#39;)&amp;lt;/script&amp;gt;就会弹出 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>博客开源 | 雨轩恋的博客</title>
+    <title>XSS和CSRF保护 | 雨轩恋的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -74,9 +76,9 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
-    <body>
+<body>
 
-        <header class="navbar-fixed">
+    <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
@@ -413,7 +415,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/shw2018/shw2018.github.io" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/tyutltf" class="waves-effect waves-light" target="_blank">
                 <i class="fa fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -528,7 +530,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/shw2018/shw2018.github.io" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/tyutltf" class="waves-effect waves-light" target="_blank">
                 <i class="fa fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -585,7 +587,7 @@
     }
 </style>
 
-<a href="https://github.com/shw2018/shw2018.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/tyutltf" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -600,7 +602,7 @@
 
 </header>
 
-        
+    
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
@@ -617,13 +619,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        博客开源
+                        XSS和CSRF保护
                     </div>
                 </div>
             </div>
@@ -735,16 +737,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/" target="_blank">
-                                <span class="chip bg-color">Hexo</span>
-                            </a>
-                        
-                            <a href="/tags/Github/" target="_blank">
-                                <span class="chip bg-color">Github</span>
-                            </a>
-                        
-                            <a href="/tags/博客/" target="_blank">
-                                <span class="chip bg-color">博客</span>
+                            <a href="/tags/网站防护/" target="_blank">
+                                <span class="chip bg-color">网站防护</span>
                             </a>
                         
                     </div>
@@ -755,8 +749,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/软件安装与配置/" class="post-category" target="_blank">
-                                软件安装与配置
+                            <a href="/categories/Flask/" class="post-category" target="_blank">
+                                Flask
                             </a>
                         
                     </div>
@@ -767,13 +761,13 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-27
+                    2019-11-09
                 </div>
 
                 <div class="post-author info-break-policy">
                     <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
                     
-                        洪卫
+                        雨轩恋
                     
                 </div>
 
@@ -781,14 +775,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.2k
+                        321
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        1 分
                     </div>
                     
                 
@@ -805,114 +799,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="效果演示"><a href="#效果演示" class="headerlink" title="效果演示"></a>效果演示</h1><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://raw.githubusercontent.com/shw2018/cdn/master/blog_files/img/Blog-Open-Source/blog-demo1.gif" alt="演示Demo"></p>
-<h1 id="简短介绍"><a href="#简短介绍" class="headerlink" title="简短介绍"></a>简短介绍</h1><p>倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的<code>blog</code>网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了，对于新手或者不懂编程的小伙伴来说，简直是福音，极大简化了您构建博客的工作量和复杂度，每个人都可以下载并修改成自己喜欢样式！如果你有修改想法，欢迎PR！最后，我们还是给这个开源小项目取个名字吧，就叫<a href="https://github.com/shw2018/hexo-blog-fly.git" target="_blank" rel="noopener">hexo-blog-fly</a>吧，怎么样？&lt;&lt;&lt;&lt;&lt;<a href="https://github.com/shw2018/hexo-blog-fly" target="_blank" rel="noopener">源代码下载</a>&gt;&gt;&gt;&gt;&gt;</p>
-<p>本博客基于<code>Hexo</code>框架搭建，用到<a href="https://github.com/shw2018/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题, 并在此基础之上做了很多修改，修复了一些bug，增加了一些新的特性和功能，博客地址：<a href="https://shw2018.github.io/" target="_blank" rel="noopener">https://shw2018.github.io</a>，博客演示：<a href="https://sunhwee.com" target="_blank" rel="noopener">sunhwee.com</a>。</p>
-<hr>
-<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p><strong>原主题特性</strong>:</p>
-<ul>
-<li><p>简单漂亮，文章内容美观易读</p>
-</li>
-<li><p><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a> 设计</p>
-</li>
-<li><p>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</p>
-</li>
-<li><p>首页轮播文章及每天动态切换 <code>Banner</code> 图片</p>
-</li>
-<li><p>瀑布流式的博客文章列表（文章无特色图片时会有 <code>24</code> 张漂亮的图片代替）</p>
-</li>
-<li><p>时间轴式的归档页</p>
-</li>
-<li><p><strong>词云</strong>的标签页和<strong>雷达图</strong>的分类页</p>
-</li>
-<li><p>丰富的关于我页面（包括关于我、文章统计图、我的项目、我的技能、相册等）</p>
-</li>
-<li><p>可自定义的数据的友情链接页面</p>
-</li>
-<li><p>支持文章置顶和文章打赏</p>
-</li>
-<li><p>支持 <code>MathJax</code></p>
-</li>
-<li><p><code>TOC</code> 目录</p>
-</li>
-<li><p>可设置复制文章内容时追加版权信息</p>
-</li>
-<li><p>可设置阅读文章时做密码验证</p>
-</li>
-<li><p><a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>、<a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>、<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> 和 <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a> 评论模块（推荐使用 <code>Gitalk</code>）</p>
-</li>
-<li><p>集成了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>、谷歌分析（<code>Google Analytics</code>）和文章字数统计等功能</p>
-</li>
-<li><p>支持在首页的音乐播放和视频播放功能</p>
-<p><strong>增加的工作或特性(未打钩的是已做但还没更新到源码的)</strong>:</p>
-</li>
-<li><p>修改了原主题的一些很多<code>bug</code>   2019.08.05</p>
-</li>
-<li><p>加入图片懒加载功能，在根目录配置文件开启和关闭    2019.08.09</p>
-</li>
-<li><p>增加<code>留言板</code>功能          2019.08.05</p>
-</li>
-<li><p>在关于板块,加入<code>简历</code>功能页   2019.08.05</p>
-</li>
-<li><p>增加视听[视觉听觉影音]板块       2019.08.10</p>
-</li>
-<li><p>支持<code>emoji</code>表情，用<code>markdown emoji</code>语法书写直接生成对应的能<strong>跳跃</strong>的表情。  2019.08.10</p>
-</li>
-<li><p>增加网站运行时间显示  2019.08.10</p>
-</li>
-<li><p>增加<code>动漫模型</code>     2019.08.10</p>
-</li>
-<li><p>整体替换Banner图片和文章特色图片   2019.08.10</p>
-</li>
-<li><p>增加分类<code>相册</code>功能         2019.08.29</p>
-</li>
-<li><p>去掉标签页,将其合并至<code>分类</code>页中                2019.09.01</p>
-</li>
-<li><p>修改了一些控件的参数   2019.09.01</p>
-</li>
-<li><p>修改部分样式,比如: 文章卡片,固定高度,使其不至于因为文章摘要的长短不同导致卡片大小不一使页面布局很不美观,类似的还有友链卡片,优化了页面内容布局,视觉更整齐美观          2019.09.01</p>
-</li>
-<li><p>解决首页文章列表卡片上方 <code>border-radius</code>圆角失效的bug  2019.09.01</p>
-</li>
-<li><p>添加页面樱花飘落动效            2019.09.09</p>
-</li>
-<li><p>添加鼠标点击烟花爆炸动效   2019.09.09</p>
-</li>
-<li><p>加入天气接口控件   2019.09.09</p>
-</li>
-<li><p>加入鼠标点击文字特效   2019.09.10</p>
-</li>
-<li><p>添加页面雪花飘落动效            2019.09.10</p>
-</li>
-<li><p>添加在线聊天插件            2019.09.12</p>
-</li>
-<li><p>持续更新…</p>
-</li>
+                <h3 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h3><blockquote>
+<p>xss攻击即跨站脚本攻击，攻击者将通过恶意代码注入到被攻击者的网站中，用户一旦访问就会执行被注入的恶意脚本。例如在用户评论界面输入代码</p>
+</blockquote>
+<pre><code>&lt;script&gt;alert('hhhh')&lt;/script&gt;</code></pre><p>就会弹出 hhhh 字样。</p>
+<h4 id="如何防护xss"><a href="#如何防护xss" class="headerlink" title="如何防护xss"></a>如何防护xss</h4><ul>
+<li>HTML转义</li>
 </ul>
-<hr>
-<p><strong>简单使用方法：</strong></p>
-<ol>
-<li><code>star</code> 本项目</li>
-<li>安装<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>, 安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodeJS</a></li>
-<li>你可以直接<code>fork</code>一份源码到你的仓库，<code>clone</code>到本地</li>
-<li>在本地博客仓库运行<code>npm i</code>命令安装依赖包</li>
-<li>修改配置信息，改成自己的信息</li>
-<li>运行命令<code>hexo  clean</code>（清除生成文件），<code>hexo g</code>（生成网页）， <code>hexo  s</code>（本地预览），<code>hexo d</code>（部署）</li>
-</ol>
-<blockquote>
-<p><strong>更多详情教程，强烈推荐看我写的：<a href="https://sunhwee.com/posts/6e8839eb.html" target="_blank" rel="noopener">Hexo+Github博客搭建完全教程</a></strong></p>
-</blockquote>
-<blockquote>
-<p><strong>最后，如果项目和教程对你有所帮助或者你看见了还算比较喜欢，欢迎给我<code>star</code>，谢谢您！</strong></p>
-</blockquote>
-<p><strong>持续更新中…，如果遇到问题欢迎联系我，在文章最后评论区【留言和讨论】，当然，欢迎点击文章最后的打赏按键，请博主一杯冰阔乐，笑～</strong></p>
-
-<table>
-  <tbody><tr>
-    <td><img width="100" src="https://sunhwee.com/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://sunhwee.com/medias/reward/zan.png"></td>   
-  </tr>
-</tbody></table>
-<script>
+<p>可以使用jinja2的escape函数对用户输入的数据进行转义。</p>
+<ul>
+<li>验证用户输入</li>
+</ul>
+<p>对用户输入的数据进行过滤</p>
+<h3 id="CSRF攻击"><a href="#CSRF攻击" class="headerlink" title="CSRF攻击"></a>CSRF攻击</h3><p>如果用户访问了A网站后不退出，继续访问了危险的B网站，那么B网站就有可能获取A网站的cookie而伪装成A网站的用户来进行操作。</p>
+<h4 id="主要防范措施"><a href="#主要防范措施" class="headerlink" title="主要防范措施"></a>主要防范措施</h4><ul>
+<li>正确使用HTTP方法，提交数据时候使用POST。</li>
+<li>使用CSRF令牌校验</li>
+</ul>
+<p>Flask有一个模块叫 flask_csrfprotect 这个模块可以用来防护CSRF攻击</p>
+<pre><code>from flask_wtf.csrf import CSRFProtect
+app.config['SECRET_KEY'] = os.urandom(24)
+CSRFProtect(app)</code></pre><p>在前端页面的form表单加入这一行代码即可</p>
+<pre><code>&lt;input type="hidden" name="csrf_token" value="{{ csrf_token() }}" /&gt;</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1080,7 +988,7 @@
                     </span>
                     <a href="https://tyutltf.github.io" class="b-link-green">雨轩恋的博客</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/08/27/blog-open-source/" class="b-link-green">博客开源</a>
+                    <a href="/2019/11/09/xss-protect/" class="b-link-green">XSS和CSRF保护</a>
                 </p>
             </div>
 
@@ -1100,10 +1008,10 @@
     let gitalk = new Gitalk({
         clientID: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
         clientSecret: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-        repo: 'shw2018.github.io',
-        owner: 'shw2018',
-        admin: ["shw2018"],
-        id: '2019/08/27/blog-open-source/',
+        repo: 'tyutltf.github.io',
+        owner: 'tyutltf',
+        admin: ["tyutltf"],
+        id: '2019/11/09/xss-protect/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1427,31 +1335,31 @@
                 <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2019/08/27/blog-open-source/">
+                <a href="/2019/11/09/xss-protect/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="博客开源">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="XSS和CSRF保护">
                         
-                        <span class="card-title">博客开源</span>
+                        <span class="card-title">XSS和CSRF保护</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的`blog`网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了。
+                            Flask网站如何有效的避免XSS和CSRF攻击
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/软件安装与配置/" class="post-category" target="_blank">
-                                    软件安装与配置
+                            <a href="/categories/Flask/" class="post-category" target="_blank">
+                                    Flask
                                 </a>
                             
                             
@@ -1462,16 +1370,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/" target="_blank">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Github/" target="_blank">
-                        <span class="chip bg-color">Github</span>
-                    </a>
-                    
-                    <a href="/tags/博客/" target="_blank">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/网站防护/" target="_blank">
+                        <span class="chip bg-color">网站防护</span>
                     </a>
                     
                 </div>
@@ -1482,27 +1382,27 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/27/blog-open-source/">
+                <a href="/2019/10/09/python-virtual/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="博客开源">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Vscode下Python虚拟环境的安装">
                         
-                        <span class="card-title">博客开源</span>
+                        <span class="card-title">Vscode下Python虚拟环境的安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            倒腾了一两周总算把个人博客网站完善了，目前这个版本使用应该是够了，当然还有一些优化项和功能增加后续在慢慢更新，为了回馈开源，今天准备把我自己修改完善的`blog`网站源代码开源。这不是生成后的网页文件，是您可以直接使用的源码，您只需要把博客相关信息换成您自己的就可以部署了。
+                            Vscode下python虚拟环境的配置以及使用
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-09
                             </span>
                         <span class="publish-author">
                             
@@ -1516,20 +1416,11 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/" target="_blank">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Github/" target="_blank">
-                        <span class="chip bg-color">Github</span>
-                    </a>
-                    
-                    <a href="/tags/博客/" target="_blank">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/Virtual/" target="_blank">
+                        <span class="chip bg-color">Virtual</span>
                     </a>
                     
                 </div>
@@ -1678,10 +1569,10 @@
 </main>
 
 
-        <footer class="page-footer bg-color">
+    <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            Copyright&copy; 2019 洪卫. 
+            Copyright&copy; 2019 雨轩恋.
 
             <br>
             <span id="sitetime"></span><span class="my-face">ღゝ◡╹)ノ♡</span>
@@ -1690,21 +1581,21 @@
             
 
             
-                    
-                        <span id="busuanzi_container_site_pv" style='display:none'></span>
-                        总访问量: <span id="busuanzi_value_site_pv" class="white-color"></span>
-                    
-        
-                    
-                        <span id="busuanzi_container_site_uv" style='display:none'></span>
-                        人次&nbsp; | &nbsp;访客人数: <span id="busuanzi_value_site_uv" class="white-color"></span> 人
-                    
-    
+            
+            <span id="busuanzi_container_site_pv" style='display:none'></span>
+            总访问量: <span id="busuanzi_value_site_pv" class="white-color"></span>
             
 
             
-                &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">1.2k</span> 字
+            <span id="busuanzi_container_site_uv" style='display:none'></span>
+            人次&nbsp; | &nbsp;访客人数: <span id="busuanzi_value_site_uv" class="white-color"></span> 人
+            
+
+            
+
+            
+            &nbsp; | &nbsp;字数统计:&nbsp;
+            <span class="white-color">1.6k</span> 字
             
 
             
@@ -1713,32 +1604,28 @@
         </div>
 
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/shw2018" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/tyutltf" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fa fa-github"></i>
     </a>
 
 
  
-    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=948840751@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=867758386@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fa fa-envelope-open"></i>
     </a>
 
 
 
 
-    <a href="https://zhihu.com/people/hongwei-60-34" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
-        <i class="fa fa-inverse">知</i>
-    </a>
 
 
-
-    <a href="http://wpa.qq.com/msgrd?v=3&uin=948840751&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=867758386&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
 
 
-    <a href="https://weibo.com/3010027571" class="tooltipped" target="_blank" data-tooltip="关注我的微博" data-position="top" data-delay="50">
+    <a href="https://weibo.com/5871837899" class="tooltipped" target="_blank" data-tooltip="关注我的微博" data-position="top" data-delay="50">
         <i class="fa fa-weibo"></i>
     </a>
 
@@ -1779,7 +1666,7 @@
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
 
-        var t1 = Date.UTC(2019, 08, 10, 00, 00, 00); //北京时间2019-8-1 00:00:00
+        var t1 = Date.UTC(2019, 11, 09, 00, 00, 00); //北京时间2019-11-9 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -1789,17 +1676,12 @@
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
             minutes) / seconds);
         document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
-            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
+            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
     } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
     siteTime();
 </script>
 
-
-
-
-
-
-        <!-- 搜索遮罩框 -->
+    <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
@@ -1817,7 +1699,7 @@ $(function () {
     searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
 });
 </script>
-        <!-- 回到顶部按钮 -->
+    <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
         <i class="fa fa-angle-up"></i>
@@ -1825,127 +1707,145 @@ $(function () {
 </div>
 
 
-        <script src="/libs/materialize/materialize.min.js"></script>
-        <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-        <script src="/libs/aos/aos.js"></script>
-        <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-        <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-        <script src="/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 
-        
-            <script src="/libs/others/clicklove.js"></script>
-        
+    
+    <script src="/libs/others/clicklove.js"></script>
+    
 
-        
-            <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-        
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
 
-        <!-- 洪卫 shw2018 add 2019.08.28 -->
-        <script type="text/javascript">
-            var OriginTitile = document.title,
-                st;
-            document.addEventListener("visibilitychange", function () {
-                document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
-                    "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
-                        document.title = OriginTitile
-                    }, 3e3))
-            })
-        </script>
+    <!-- 洪卫 shw2018 add 2019.08.28 -->
+    <script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+                "(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
-        <!-- 鼠标点击烟花爆炸效果  洪卫 shw2018 add 2019.09.09 -->
-        
-            <canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
-            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-            <script type="text/javascript" src="/js/fireworks.js"></script>
-        
+    <!-- 鼠标点击烟花爆炸效果  洪卫 shw2018 add 2019.09.09 -->
+    
+    <canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+    
 
-        <!-- 背景雪花飘落特效洪卫 shw2018 add 2019.09.10 -->
-        
-            <script type="text/javascript">
-            //只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-            }
-            </script>
-        
+    <!-- 背景雪花飘落特效洪卫 shw2018 add 2019.09.10 -->
+    
+    <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+        }
+    </script>
+    
 
-        <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
-        
-            <script src="/js/wenzi.js" type="text/javascript"></script>
-        
+    <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
+    
+    <script src="/js/wenzi.js" type="text/javascript"></script>
+    
 
-        <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
-        
-            <script type="text/javascript">
-                var windowWidth = $(window).width();
-                if (windowWidth > 768) {
-                    document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
+    <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
+        }
+    </script>
+    
+
+    <!-- 在线聊天工具  洪卫 shw2018 add 2019.09.11 -->
+    
+    <script src="//code.tidio.co/xxxxxxxxxxxxxxxxxxxxxxxxxxx.js"></script>
+    <!--  在线聊天位置自定义  洪卫 shw2018 add 2019.09.13  -->
+    <script>
+        $(document).ready(function () {
+
+            setInterval(change_Tidio, 50);
+            function change_Tidio() {
+
+                var tidio = $("#tidio-chat iframe");
+                if (tidio.css("display") == "block" && $(window).width() > 977) {
+                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll").css("display") == "none" && $(window).width() > 977) > 0 ? "-40px" : ($("div.toc-title").length && $(window).width() > 977) > 0 ? "80px" : "20px";
+                    document.getElementById("tidio-chat-iframe").style.right = "-15px";
+                    document.getElementById("tidio-chat-iframe").style.height = parseInt(tidio.css("height")) >= 520 ? "520px" : tidio.css("height");
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
                 }
-            </script>
-        
+                else if (tidio.css("display") == "block" && $(window).width() > 601 && $(window).width() < 992) {
+                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll").css("display") == "none" && 601 < $(window).width() < 992) > 0 ? "-40px" : "20px";
+                    document.getElementById("tidio-chat-iframe").style.right = "-15px";
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
+                }
+                else if (tidio.css("display") == "block" && $(window).width() < 601 && parseInt(tidio.css("height")) < 230) {
+                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll").css("display") == "none" && $(window).width() < 601) > 0 ? "-10px" : "45px";
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
+                }
 
-        <!-- 在线聊天工具  洪卫 shw2018 add 2019.09.11 -->
-        
-            <script src="//code.tidio.co/xxxxxxxxxxxxxxxxxxxxxxxxxxx.js"></script>
-            <!--  在线聊天位置自定义  洪卫 shw2018 add 2019.09.13  -->
-            <script> 
-                $(document).ready(function () {
-
-                    setInterval(change_Tidio, 50);  
-                    function change_Tidio() { 
-
-                        var tidio=$("#tidio-chat iframe");
-                        if(tidio.css("display")=="block"&& $(window).width()>977 ){
-                            document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"80px":"20px";   
-                            document.getElementById("tidio-chat-iframe").style.right="-15px";   
-                            document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
-                            document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                        } 
-                        else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
-                            document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;   
-                            document.getElementById("tidio-chat-iframe").style.right="-15px"; 
-                            document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                        }
-                        else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
-                            document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;   
-                            document.getElementById("tidio-chat-iframe").style.zIndex="997";
-                        }
-
-                        if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
-                            document.getElementById("tidio-chat-iframe").style.zIndex="998";
-                        }
-                    } 
-                }); 
-            </script>
-        
-
-        <!-- 背景 canvas-nest  洪卫 shw 2018  add 2019.09.15-->
-        
-            <script type="text/javascript">
-            var windowWidth = $(window).width();
-            if (windowWidth > 992) {
-                document.write('<script type="text/javascript" color="0,0,255" pointColor="0,0,255" opacity= "0.8" zIndex="--1" count="150"src="/libs/background/canvas-nest.js"><\/script>');
+                if (tidio.css("display") == "block" && $(window).width() < 601 && parseInt(tidio.css("height")) >= 230) {
+                    document.getElementById("tidio-chat-iframe").style.zIndex = "998";
+                }
             }
-            </script>
-        
+        }); 
+    </script>
+    
 
-        <!-- 背景静止彩带  洪卫 shw 2018  add 2019.09.15-->
-        
+    <!-- 背景 canvas-nest  洪卫 shw 2018  add 2019.09.15-->
+    
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth > 992) {
+            document.write('<script type="text/javascript" color="0,0,255" pointColor="0,0,255" opacity= "0.8" zIndex="--1" count="150"src="/libs/background/canvas-nest.js"><\/script>');
+        }
+    </script>
+    
 
-        <!-- 背景动态彩带 洪卫 shw 2018  add 2019.09.15-->
-        
-            <script type="text/javascript">
-            var windowWidth = $(window).width();
-            if (windowWidth > 992) {
-                document.write('<script type="text/javascript" src="/libs/background/ribbon-dynamic.js"><\/script>');
-            }
-            </script>
-        
+    <!-- 背景静止彩带  洪卫 shw 2018  add 2019.09.15-->
+    
 
-    <script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
+    <!-- 背景动态彩带 洪卫 shw 2018  add 2019.09.15-->
+    
+    <script type="text/javascript">
+        var windowWidth = $(window).width();
+        if (windowWidth > 992) {
+            document.write('<script type="text/javascript" src="/libs/background/ribbon-dynamic.js"><\/script>');
+        }
+    </script>
+    
+
+    <!-- 天气接口控件 洪卫 shw2018 add 2019.09.09 -->
+    
+    <!-- tyutltf_weither -->
+<script type="text/javascript">
+    WIDGET = { FID: 'Mkevsgzb5I' }
+</script>
+
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
+
+<script type="=text/javascript">
+     var windowWidth=$(window).width();
+     if (windowWidth>768){
+         document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');'
+')
+}
+</script>
+    
+<script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
+
 </html>

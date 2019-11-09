@@ -6,10 +6,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, Python Flask Scrapy Pandas 雨轩恋 Numpy 深度学习">
+    <meta name="keywords" content="标签: 网站防护, Python Flask Scrapy Pandas 雨轩恋 Numpy 深度学习">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="分类 | 雨轩恋的博客">
+    <meta name="description" content="标签: 网站防护 | 雨轩恋的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类 | 雨轩恋的博客</title>
+    <title>标签: 网站防护 | 雨轩恋的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -609,7 +609,7 @@
                     雨轩恋的博客
                  -->
                 
-                    分类
+                    标签
                 
             </div>
 
@@ -637,51 +637,49 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     
 
-<div id="category-cloud" class="container chip-container">
+<div id="tags" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
+                <i class="fa fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
             <div class="tag-chips">
                 
                 
-                
-                <a href="/categories/生活杂谈/" title="生活杂谈: 1">
+                <a href="/tags/北漂/" title="北漂: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">生活杂谈
+                            data-tagname="北漂" style="background-color: #F9EBEA;">北漂
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/软件安装与配置/" title="软件安装与配置: 1">
+                <a href="/tags/Virtual/" title="Virtual: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">软件安装与配置
+                            data-tagname="Virtual" style="background-color: #F5EEF8;">Virtual
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/Flask/" title="Flask: 1">
+                <a href="/tags/网站防护/" title="网站防护: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">Flask
+                             chip-active "
+                            data-tagname="网站防护" style="background-color: #D5F5E3;">网站防护
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/彩蛋/" title="彩蛋: 1">
+                <a href="/tags/博客/" title="博客: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #E8F8F5;">彩蛋
+                            data-tagname="博客" style="background-color: #E8F8F5;">博客
                         <span class="tag-length">1</span>
                     </span>
                 </a>
-                
                 
             </div>
         </div>
@@ -689,64 +687,46 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </div>
 
     
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
-
-    
-
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"生活杂谈","max":2},{"name":"软件安装与配置","max":2},{"name":"Flask","max":2},{"name":"彩蛋","max":2}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [1,1,1,1],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
-
-    radarChart.setOption(option);
-</script>
-    
-
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="网站防护" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2019/11/09/xss-protect/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="XSS和CSRF保护">
+                            
+                            <span class="card-title">XSS和CSRF保护</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Flask/" class="post-category" target="_blank">
+                                Flask
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
 
     <footer class="page-footer bg-color">
     <div class="container row center-align">

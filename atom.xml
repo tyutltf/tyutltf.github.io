@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tyutltf.github.io/"/>
-  <updated>2019-11-07T13:14:22.510Z</updated>
+  <updated>2019-11-09T07:05:43.250Z</updated>
   <id>https://tyutltf.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客开源</title>
-    <link href="https://tyutltf.github.io/2019/08/27/blog-open-source/"/>
-    <id>https://tyutltf.github.io/2019/08/27/blog-open-source/</id>
-    <published>2019-08-27T03:41:03.000Z</published>
-    <updated>2019-11-07T13:14:22.510Z</updated>
+    <title>XSS和CSRF保护</title>
+    <link href="https://tyutltf.github.io/2019/11/09/xss-protect/"/>
+    <id>https://tyutltf.github.io/2019/11/09/xss-protect/</id>
+    <published>2019-11-09T03:01:15.000Z</published>
+    <updated>2019-11-09T07:05:43.250Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,38 @@
       
         
         
-          &lt;h1 id=&quot;效果演示&quot;&gt;&lt;a href=&quot;#效果演示&quot; class=&quot;headerlink&quot; title=&quot;效果演示&quot;&gt;&lt;/a&gt;效果演示&lt;/h1&gt;&lt;p&gt;&lt;img
+          &lt;h3 id=&quot;XSS&quot;&gt;&lt;a href=&quot;#XSS&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Flask" scheme="https://tyutltf.github.io/categories/Flask/"/>
+    
+    
+      <category term="网站防护" scheme="https://tyutltf.github.io/tags/%E7%BD%91%E7%AB%99%E9%98%B2%E6%8A%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vscode下Python虚拟环境的安装</title>
+    <link href="https://tyutltf.github.io/2019/10/09/python-virtual/"/>
+    <id>https://tyutltf.github.io/2019/10/09/python-virtual/</id>
+    <published>2019-10-09T03:01:15.000Z</published>
+    <updated>2019-11-09T07:11:58.696Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;虚拟环境virtualenvwrapper&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;pip install virtualenv 首先得安装 virtualenv 库&lt;/p&gt;
+&lt;p&gt;pip install
         
       
     
@@ -38,11 +69,60 @@
       <category term="软件安装与配置" scheme="https://tyutltf.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="Hexo" scheme="https://tyutltf.github.io/tags/Hexo/"/>
+      <category term="Virtual" scheme="https://tyutltf.github.io/tags/Virtual/"/>
     
-      <category term="Github" scheme="https://tyutltf.github.io/tags/Github/"/>
+  </entry>
+  
+  <entry>
+    <title>Python彩蛋</title>
+    <link href="https://tyutltf.github.io/2019/09/15/test-demo/"/>
+    <id>https://tyutltf.github.io/2019/09/15/test-demo/</id>
+    <published>2019-09-15T03:01:15.000Z</published>
+    <updated>2019-11-09T07:15:29.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;zen-of-python&quot;&gt;&lt;a href=&quot;#zen-of-python&quot; class=&quot;headerlink&quot; title=&quot;zen of python&quot;&gt;&lt;/a&gt;zen of
+        
+      
+    
+    </summary>
+    
+      <category term="彩蛋" scheme="https://tyutltf.github.io/categories/%E5%BD%A9%E8%9B%8B/"/>
+    
     
       <category term="博客" scheme="https://tyutltf.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>北漂生活记录</title>
+    <link href="https://tyutltf.github.io/2019/05/09/beipiao/"/>
+    <id>https://tyutltf.github.io/2019/05/09/beipiao/</id>
+    <published>2019-05-09T03:01:15.000Z</published>
+    <updated>2019-11-09T07:09:39.402Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;早上六点，随着一阵”狂浪是一种态度，狂浪在起起伏伏，狂浪，狂浪“悦耳的铃声。
+我不情愿的睁开了双眼，来到了如图所示的卫生间&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="生活杂谈" scheme="https://tyutltf.github.io/categories/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="北漂" scheme="https://tyutltf.github.io/tags/%E5%8C%97%E6%BC%82/"/>
     
   </entry>
   

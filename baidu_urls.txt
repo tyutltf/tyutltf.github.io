@@ -1,1 +1,4 @@
-https://tyutltf.github.io/2019/08/27/blog-open-source/
+https://tyutltf.github.io/2019/11/09/xss-protect/
+https://tyutltf.github.io/2019/10/09/python-virtual/
+https://tyutltf.github.io/2019/09/15/test-demo/
+https://tyutltf.github.io/2019/05/09/beipiao/
