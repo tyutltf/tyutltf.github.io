@@ -1,4 +1,14 @@
 https://tyutltf.github.io/2019/11/09/xss-protect/
+https://tyutltf.github.io/2019/11/01/go-demo/
 https://tyutltf.github.io/2019/10/09/python-virtual/
 https://tyutltf.github.io/2019/09/15/test-demo/
+https://tyutltf.github.io/2019/09/09/zhongwen-bug/
 https://tyutltf.github.io/2019/05/09/beipiao/
+https://tyutltf.github.io/2019/05/09/daili-shiyong/
+https://tyutltf.github.io/2019/04/09/python-redis/
+https://tyutltf.github.io/2019/03/19/pyechart/
+https://tyutltf.github.io/2019/03/19/jieba-ciyun/
+https://tyutltf.github.io/2019/02/09/echart-pie/
+https://tyutltf.github.io/2019/02/09/scrapy-daili/
+https://tyutltf.github.io/2019/01/15/zhihu-zhuaqu/
+https://tyutltf.github.io/2019/01/09/numpy-shiyong/

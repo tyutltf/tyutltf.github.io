@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tyutltf.github.io/2019/11/01/go-demo/</loc>
+    
+    <lastmod>2019-11-10T13:40:34.722Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/03/19/jieba-ciyun/</loc>
+    
+    <lastmod>2019-11-10T13:29:15.382Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/03/19/pyechart/</loc>
+    
+    <lastmod>2019-11-10T13:20:19.066Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/02/09/echart-pie/</loc>
+    
+    <lastmod>2019-11-10T13:08:54.343Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/01/15/zhihu-zhuaqu/</loc>
+    
+    <lastmod>2019-11-10T13:01:34.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/02/09/scrapy-daili/</loc>
+    
+    <lastmod>2019-11-10T12:57:27.797Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/01/09/numpy-shiyong/</loc>
+    
+    <lastmod>2019-11-10T12:52:21.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/04/09/python-redis/</loc>
+    
+    <lastmod>2019-11-10T12:33:56.907Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/05/09/daili-shiyong/</loc>
+    
+    <lastmod>2019-11-10T12:26:23.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tyutltf.github.io/2019/09/09/zhongwen-bug/</loc>
+    
+    <lastmod>2019-11-10T12:17:31.186Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tyutltf.github.io/2019/09/15/test-demo/</loc>
     
     <lastmod>2019-11-09T07:15:29.186Z</lastmod>

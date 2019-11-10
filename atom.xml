@@ -43,6 +43,35 @@
   </entry>
   
   <entry>
+    <title>Golang学习</title>
+    <link href="https://tyutltf.github.io/2019/11/01/go-demo/"/>
+    <id>https://tyutltf.github.io/2019/11/01/go-demo/</id>
+    <published>2019-11-01T03:01:15.000Z</published>
+    <updated>2019-11-10T13:40:34.722Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;hello-world&quot;&gt;&lt;a href=&quot;#hello-world&quot; class=&quot;headerlink&quot; title=&quot;hello world&quot;&gt;&lt;/a&gt;hello world&lt;/h4&gt;&lt;p&gt;主程序&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package
+        
+      
+    
+    </summary>
+    
+      <category term="GO学习" scheme="https://tyutltf.github.io/categories/GO%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="hello world" scheme="https://tyutltf.github.io/tags/hello-world/"/>
+    
+      <category term="GO" scheme="https://tyutltf.github.io/tags/GO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vscode下Python虚拟环境的安装</title>
     <link href="https://tyutltf.github.io/2019/10/09/python-virtual/"/>
     <id>https://tyutltf.github.io/2019/10/09/python-virtual/</id>
@@ -100,6 +129,35 @@
   </entry>
   
   <entry>
+    <title>计算机改名中文的bug</title>
+    <link href="https://tyutltf.github.io/2019/09/09/zhongwen-bug/"/>
+    <id>https://tyutltf.github.io/2019/09/09/zhongwen-bug/</id>
+    <published>2019-09-09T03:01:15.000Z</published>
+    <updated>2019-11-10T12:17:31.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本来今天高高兴兴，打开了我心爱的项目，启动，运行，报错！what，什么鬼？怎么回事，发生了啥子，昨晚还好好地啊，咋过了一晚上就出错了呢，代码都没有改动，就报如下错误。&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="计算机知识" scheme="https://tyutltf.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="计算机" scheme="https://tyutltf.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+      <category term="中文名称" scheme="https://tyutltf.github.io/tags/%E4%B8%AD%E6%96%87%E5%90%8D%E7%A7%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>北漂生活记录</title>
     <link href="https://tyutltf.github.io/2019/05/09/beipiao/"/>
     <id>https://tyutltf.github.io/2019/05/09/beipiao/</id>
@@ -123,6 +181,241 @@
     
     
       <category term="北漂" scheme="https://tyutltf.github.io/tags/%E5%8C%97%E6%BC%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python代理的使用</title>
+    <link href="https://tyutltf.github.io/2019/05/09/daili-shiyong/"/>
+    <id>https://tyutltf.github.io/2019/05/09/daili-shiyong/</id>
+    <published>2019-05-09T03:01:15.000Z</published>
+    <updated>2019-11-10T12:26:23.018Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我们在做爬虫的过程中经常会遇到这样的情况：最初爬虫正常运行，正常抓取数据，一切看起来都是那么的美好，然而一杯茶的功夫可能就会出现错误，比如403
+        
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="代理" scheme="https://tyutltf.github.io/tags/%E4%BB%A3%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python操作redis</title>
+    <link href="https://tyutltf.github.io/2019/04/09/python-redis/"/>
+    <id>https://tyutltf.github.io/2019/04/09/python-redis/</id>
+    <published>2019-04-09T03:01:15.000Z</published>
+    <updated>2019-11-10T12:33:56.907Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;redis是一个基于内存的高效的键值型非关系数据库，接下来我们就来看看这些操作是如何具体使用的吧&lt;/p&gt;
+&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="https://tyutltf.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="redis" scheme="https://tyutltf.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pyechart使用</title>
+    <link href="https://tyutltf.github.io/2019/03/19/pyechart/"/>
+    <id>https://tyutltf.github.io/2019/03/19/pyechart/</id>
+    <published>2019-03-19T03:01:15.000Z</published>
+    <updated>2019-11-10T13:20:19.066Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;由于需要在项目中展示数据，查了查资料发现，pyecharts模块在网页数据展示方面有很大优势，所以就学了点pyechas&lt;/p&gt;
+&lt;p&gt;参考博客：&lt;/p&gt;
+&lt;p&gt;Python：数据可视化pyecharts的使用 - JYRoy - 博客园  &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="可视化" scheme="https://tyutltf.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+    
+      <category term="echart" scheme="https://tyutltf.github.io/tags/echart/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jieba中文分词</title>
+    <link href="https://tyutltf.github.io/2019/03/19/jieba-ciyun/"/>
+    <id>https://tyutltf.github.io/2019/03/19/jieba-ciyun/</id>
+    <published>2019-03-19T03:01:15.000Z</published>
+    <updated>2019-11-10T13:29:15.382Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今日学习了python的词云技术&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;from os import path
+from wordcloud import WordCloud
+import matplotlib.pyplot as
+        
+      
+    
+    </summary>
+    
+      <category term="词云" scheme="https://tyutltf.github.io/categories/%E8%AF%8D%E4%BA%91/"/>
+    
+    
+      <category term="jieba" scheme="https://tyutltf.github.io/tags/jieba/"/>
+    
+      <category term="分词" scheme="https://tyutltf.github.io/tags/%E5%88%86%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>echart数据过多</title>
+    <link href="https://tyutltf.github.io/2019/02/09/echart-pie/"/>
+    <id>https://tyutltf.github.io/2019/02/09/echart-pie/</id>
+    <published>2019-02-09T03:01:15.000Z</published>
+    <updated>2019-11-10T13:08:54.343Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;echart中数据过多可视化的数据。。一言难尽&lt;/p&gt;
+&lt;p&gt;如图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="可视化" scheme="https://tyutltf.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+    
+      <category term="echart" scheme="https://tyutltf.github.io/tags/echart/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scrapy中伪装头的使用</title>
+    <link href="https://tyutltf.github.io/2019/02/09/scrapy-daili/"/>
+    <id>https://tyutltf.github.io/2019/02/09/scrapy-daili/</id>
+    <published>2019-02-09T03:01:15.000Z</published>
+    <updated>2019-11-10T12:57:27.797Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在网站大部分都是反爬虫技术，最简单就是加代理，写了一个代理小程序。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# -*- coding: utf-8 -*-
+#__author__ = &quot;雨轩恋i&quot;
+#__date__ = &quot;2018年10月30日&quot;
+
+#
+        
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="scrapy" scheme="https://tyutltf.github.io/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>知乎热门话题的爬取</title>
+    <link href="https://tyutltf.github.io/2019/01/15/zhihu-zhuaqu/"/>
+    <id>https://tyutltf.github.io/2019/01/15/zhihu-zhuaqu/</id>
+    <published>2019-01-15T03:01:15.000Z</published>
+    <updated>2019-11-10T13:01:34.843Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本例子是参考崔老师的Python3网络爬虫开发实战写的&lt;/p&gt;
+&lt;p&gt;看网页界面：&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="知乎" scheme="https://tyutltf.github.io/tags/%E7%9F%A5%E4%B9%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>numpy数组的使用</title>
+    <link href="https://tyutltf.github.io/2019/01/09/numpy-shiyong/"/>
+    <id>https://tyutltf.github.io/2019/01/09/numpy-shiyong/</id>
+    <published>2019-01-09T03:01:15.000Z</published>
+    <updated>2019-11-10T12:52:21.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;机器学习的最基础模块就是numpy模块了，而numpy模块中的数组操作又是重中之重，所以我们要把数组的各种方法弄得明明白白的，以下就是数组的一些常用方法&lt;/p&gt;
+&lt;p&gt;1.创建各种各样的数组：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import numpy as
+        
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="https://tyutltf.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="知乎" scheme="https://tyutltf.github.io/tags/%E7%9F%A5%E4%B9%8E/"/>
     
   </entry>
   

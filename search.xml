@@ -29,6 +29,33 @@
     
     
     <entry>
+      <title>Golang学习</title>
+      <link href="/2019/11/01/go-demo/"/>
+      <url>/2019/11/01/go-demo/</url>
+      
+        <content type="html"><![CDATA[<h4 id="hello-world"><a href="#hello-world" class="headerlink" title="hello world"></a>hello world</h4><p>主程序</p><pre><code>package mainimport "fmt"func main()  {    fmt.Println("hello ,世界")}</code></pre><p>输出结果</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/common/1471003/201911/1471003-20191110213913050-398519055.jpg" alt="结果"></p><h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>go程序部署起来也特别方便，go build 文件名即可 会生成一个exe文件。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> GO学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hello world </tag>
+            
+            <tag> GO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vscode下Python虚拟环境的安装</title>
       <link href="/2019/10/09/python-virtual/"/>
       <url>/2019/10/09/python-virtual/</url>
@@ -79,6 +106,33 @@
     
     
     <entry>
+      <title>计算机改名中文的bug</title>
+      <link href="/2019/09/09/zhongwen-bug/"/>
+      <url>/2019/09/09/zhongwen-bug/</url>
+      
+        <content type="html"><![CDATA[<p>本来今天高高兴兴，打开了我心爱的项目，启动，运行，报错！what，什么鬼？怎么回事，发生了啥子，昨晚还好好地啊，咋过了一晚上就出错了呢，代码都没有改动，就报如下错误。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181220153742175-1245730562.png" alt="1"></p><p>提示编码错误。这个我就不能理解了，为何会出现编码错误，百度，查资料，怎么都解决不了。心态爆炸，一个小时后才知道了错误原因。居然是因为电脑名称带了中文字符。。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181220153945886-169673043.png" alt="1"></p><p>我昨天水群的时候，一时手痒，把自己的电脑名称改了，于是今天就悲剧了。只好老老实实的改回英文</p><p>然后项目可以正常的运行了，真好。</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181220154126189-566743244.png" alt="1"></p><p>完后就开始反思，为何会遇到这种错误，犹记得我刚开始学编程的时候，遇到的各种各样的编码错误，什么项目名称不能带中文，路径不能有中文等等啊</p><p>反正就是一切中文都走开，没办法，谁叫我们用的是外国人的规则，只能在规则里行事了呗。</p><p>听说易语言不错，以后去尝试尝试易语言吧。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机知识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机 </tag>
+            
+            <tag> 中文名称 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>北漂生活记录</title>
       <link href="/2019/05/09/beipiao/"/>
       <url>/2019/05/09/beipiao/</url>
@@ -96,6 +150,216 @@
         <tags>
             
             <tag> 北漂 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python代理的使用</title>
+      <link href="/2019/05/09/daili-shiyong/"/>
+      <url>/2019/05/09/daili-shiyong/</url>
+      
+        <content type="html"><![CDATA[<p>我们在做爬虫的过程中经常会遇到这样的情况：最初爬虫正常运行，正常抓取数据，一切看起来都是那么的美好，然而一杯茶的功夫可能就会出现错误，比如403 Forbidden；出现这样的原因往往是网站采取了一些反爬虫的措施，比如，服务器会检测某个IP在单位时间内的请求次数，如果超过了某个阈值，那么服务器会直接拒绝服务，返回一些错误信息。这时候，代理就派上用场了。</p><p>国内的免费代理网站：</p><p><a href="https://www.xicidaili.com/" target="_blank" rel="noopener">西刺代理</a></p><p><a href="https://www.kuaidaili.com/free/inha/" target="_blank" rel="noopener">快代理免费代理</a></p><p><a href="http://www.goubanjia.com/" target="_blank" rel="noopener">全网代理ip</a></p><p>接下来看如何设置代理：</p><p>urllib代理设置：</p><pre><code>from urllib.error import URLErrorfrom urllib.request import ProxyHandler,build_openerproxy='123.58.10.36:8080'  #使用本地代理#proxy='username:password@123.58.10.36:8080'  #购买代理proxy_handler=ProxyHandler({    'http':'http://'+proxy,    'https':'https://'+proxy})opener=build_opener(proxy_handler)try:    response=opener.open('http://httpbin.org/get') #测试ip的网址    print(response.read().decode('utf-8'))except URLError as e:    print(e.reason)</code></pre><p>运行结果如下：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181218200044731-924552458.png" alt="1"></p><p>requests代理设置：</p><pre><code>import requestsproxy='123.58.10.36:8080'  #本地代理#proxy='username:password@123.58.10.36:8080'proxies={    'http':'http://'+proxy,    'https':'https://'+proxy}try:    response=requests.get('http://httpbin.org/get',proxies=proxies)    print(response.text)except requests.exceptions.ConnectionError as e:    print('错误:',e.args)</code></pre><p>运行结果如下：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181218200206306-526102698.png" alt="1"></p><p>Selenium代理设置：</p><pre><code>from selenium import webdriverproxy='123.58.10.36:8080'chrome_options=webdriver.ChromeOptions()chrome_options.add_argument('--proxy-server=http://'+proxy)browser=webdriver.Chrome(chrome_options=chrome_options)browser.get('http://httpbin.org/get')</code></pre><p>运行结果：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181218200256758-1326698509.png" alt="1"></p><p>以上就是代理的一些简单设置、、、</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> 代理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python操作redis</title>
+      <link href="/2019/04/09/python-redis/"/>
+      <url>/2019/04/09/python-redis/</url>
+      
+        <content type="html"><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>redis是一个基于内存的高效的键值型非关系数据库，接下来我们就来看看这些操作是如何具体使用的吧</p><h4 id="数据库连接操作"><a href="#数据库连接操作" class="headerlink" title="数据库连接操作"></a>数据库连接操作</h4><pre><code>from redis import StrictRedis#数据库连接方式 因为就算我自己使用的，所有没有设置密码redis=StrictRedis(host='localhost',port=6379,db=0,password=None)#redis.set('age',20)print(redis.get('name'))print(redis.exists('name')) #是否存在name这个键print(redis.type('name'))  #判断name的类型print(redis.keys('n*'))  #获取所有以n开头的键print(redis.randomkey())  #获取随机一个键print(redis.dbsize()) #获取当前数据库中的键的数目</code></pre><p>结果如下：</p><p>​<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/2018121216552372.PNG" alt="1"></p><h4 id="字符串操作："><a href="#字符串操作：" class="headerlink" title="字符串操作："></a>字符串操作：</h4><pre><code>from redis import StrictRedis,ConnectionPool#另一种连接方式pool=ConnectionPool(host='localhost',port=6379,db=0,password=None)redis=StrictRedis(connection_pool=pool)#redis.set('name','Bob')print(redis.get('name'))#print(redis.getset('name','Mike'))  #赋值name为Mike并返回上一次的valueprint(redis.mget(['name','age']))   #输出name键和age键的value#print(redis.setnx('newname','james'))  #如果键值不存在，则赋值#print(redis.mset({'name1':'smith','name2':'curry'}))  #批量赋值#print(redis.msetnx({'name3':'ltf','name4':'lsq'}))    #不存在才批量赋值#print(redis.incr('age',1))   #age对应的value 加1#print(redis.decr('age',5))   #age对应的value 减5#print(redis.append('name4','is a sb'))   #在name4的value后追加 is a sb 返回字符串长度print(redis.substr('name',1,4))   #截取键 nameprint(redis.getrange('name',0,-1))  #截取键 name</code></pre><p>结果如下：</p><p>​<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/2018121216571096.PNG" alt="1"></p><h4 id="列表操作"><a href="#列表操作" class="headerlink" title="列表操作"></a>列表操作</h4><pre><code>from redis import StrictRedisredis=StrictRedis(host='localhost',port=6379,db=0,password=None)#print(redis.rpush('list',1,2,3)) #向键名为list的列表尾部添加1,2,3 返回长度#print(redis.lpush('list',0))   #向键名为list的列表头部添加0 返回长度print(redis.llen('list'))   #返回列表的长度print(redis.lrange('list',1,3))  #返回起始索引为1 终止索引为3的索引范围对应的列表print(redis.lindex('list',1))   #返回索引为1的元素-value#print(redis.lset('list',1,5))  #将list的列表索引为1的重新赋值为5#print(redis.lpop('list'))  #删除list第一个元素#print(redis.rpop('list'))   #删除list最后一个元素#print(redis.blpop('list'))   #删除list第一个元素#print(redis.brpop('list'))    #删除最后一个元素print(redis.rpoplpush('list','list1'))   #删除list的尾元素并将其添加到list1的头部</code></pre><p>运行结果如下：</p><p>![1​(<a href="https://img-blog.csdnimg.cn/20181212165818751.PNG" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20181212165818751.PNG</a>)</p><h4 id="集合操作："><a href="#集合操作：" class="headerlink" title="集合操作："></a>集合操作：</h4><pre><code>from redis import StrictRedis,ConnectionPoolpool=ConnectionPool(host='localhost',port=6379,db=0,password=None)redis=StrictRedis(connection_pool=pool)#print(redis.sadd('tags','Book','Tea','Coffee'))  #返回集合长度 3#print(redis.srem('tags','Book'))  返回删除的数据个数#print(redis.spop('tags'))   #随机删除并返回该元素#print(redis.smove('tags','tags1','Coffee'))print(redis.scard('tags'))  #获取tags集合的元素个数print(redis.sismember('tags','Book'))   #判断Book是否在tags的集合中print(redis.sinter('tags','tags1'))    #返回集合tags和集合tags1的交集print(redis.sunion('tags','tags1'))    #返回集合tags和集合tags1的并集print(redis.sdiff('tags','tags1'))     #返回集合tags和集合tags1的差集print(redis.smembers('tags'))     #返回集合tags的所有元素print(redis.srandmember('tags'))   #返回tags的一个随机元素</code></pre><p>运行结果如下：</p><p>​<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20181212165939322.PNG" alt="1"></p><h4 id="哈希表操作："><a href="#哈希表操作：" class="headerlink" title="哈希表操作："></a>哈希表操作：</h4><pre><code>from redis import StrictRedis,ConnectionPoolpool=ConnectionPool(host='localhost',port=6379,db=0,password=None)redis=StrictRedis(connection_pool=pool)#print(redis.hset('price','cake',5))  # 向键名为price的散列表添加映射关系，返回1 即添加的映射个数#print(redis.hsetnx('price','book',6)) # 向键名为price的散列表添加映射关系，返回1 即添加的映射个数print(redis.hget('price','cake'))  #获取键名为cake的值 返回5#print(redis.hmset('price',{'banana':2,'apple':3,'pear':6,'orange':7}))   #批量添加映射print(redis.hmget('price',['apple','orange']))   #查询apple和orange的值 输出 b'3',b'7'#print(redis.hincrby('price','apple',3))   #apple映射加3 为6print(redis.hexists('price','banana'))    #在price中banana是否存在  返回True#print(redis.hdel('price','banana'))    #从price中删除banana 返回1print(redis.hlen('price'))   #输出price的长度print(redis.hkeys('price'))  #输出所有的映射键名print(redis.hvals('price'))  #输出所有的映射键值print(redis.hgetall('price'))  #输出所有的映射键对</code></pre><p>运行结果如下：</p><p>​<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20181212170044107.PNG" alt="1"></p><p>还有一个是无序集合操作，不过我在实现这个操作的时候遇到了不可解决的问题。。</p><p>print(redis.zadd(‘price’,100,’bob’,98,’mike’) 这句话遇到了莫名其妙的错误，，怎么也解决不了，希望有人可以帮我解决。。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pyechart使用</title>
+      <link href="/2019/03/19/pyechart/"/>
+      <url>/2019/03/19/pyechart/</url>
+      
+        <content type="html"><![CDATA[<p>由于需要在项目中展示数据，查了查资料发现，pyecharts模块在网页数据展示方面有很大优势，所以就学了点pyechas</p><p>参考博客：</p><p>Python：数据可视化pyecharts的使用 - JYRoy - 博客园  <a href="http://www.cnblogs.com/jyroy/p/9446486.html" target="_blank" rel="noopener">http://www.cnblogs.com/jyroy/p/9446486.html</a></p><p>python可视化pyecharts - ting_163的博客 - CSDN博客  <a href="https://blog.csdn.net/ting_163/article/details/80896419?utm_source=blogxgwz0" target="_blank" rel="noopener">https://blog.csdn.net/ting_163/article/details/80896419?utm_source=blogxgwz0</a></p><p>两位大佬的博客都写的不错，学到了很多</p><p>最基本的柱状图：</p><pre><code>from pyecharts import Barbar=Bar('我的第一个图表','副标题')bar.add("服装",["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"],[5,20,36,10,75,90])bar.show_config()bar.render('柱状图.html')</code></pre><p>运行结果：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181015211934891-1225587641.png" alt="1"></p><p>词云图：</p><pre><code>from pyecharts import WordCloudname =['110', 'haihai', '鬼子', '豆腐', '旺旺', '南哥', '黑子', '两凡', '蒙多', '一哥', '小三', '末伏', '相大胖', '大路', '幺爸', '刘能', '刘瑞']value =[10000, 6181, 4386, 4055, 2467, 2244, 1898, 1484, 1112, 965, 847, 582, 555, 550, 462, 366, 360]wordcloud =WordCloud(width=1300, height=620)wordcloud.add("", name, value, word_size_range=[30, 100], shape='')#词云图轮廓，有'circle', 'cardioid', 'diamond', 'triangle-forward', 'triangle', 'pentagon', 'star'可选#意思：圆，心形，钻石，三角形，三角形，五角大楼，星星wordcloud.show_config()wordcloud.render('回忆.html')</code></pre><p>运行结果：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181015212458306-116916436.png" alt="1"></p><p>还弄了一个比较好玩的：</p><pre><code>from pyecharts import Mapvalue = [20,190,253,77,65,40,70,80,20,180,800]attr = ['运城市', '临汾市', '太原市', '大同市', '忻州市','长治市','晋中市','吕梁市','晋城市','阳泉市','朔州市']map = Map("山西地图示例", width=1200,height=600)map.add("", attr, value, maptype='山西',                is_visualmap=True,                visual_text_color='#000',is_label_show=True)map.render('山西.html')</code></pre><p>运行结果：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181015212405397-587114063.png" alt="1"></p><p>咳咳咳，接下来这个就，</p><pre><code>from pyecharts import WordCloudname =['世奇老狗', '老猥琐', '丰晋峰', '老狗逼', '老湿机', '草泥马', '阿伟', '牛牛', '嘤嘤嘤', '竹鼠商', '200GANA', '波多老师', '一柱擎天', '雪碧', '辣鸡', '渣渣', '落地成盒']value =[10000, 6181, 4386, 4055, 2467, 2244, 1898, 1484, 1112, 965, 847, 582, 555, 550, 462, 366, 360]wordcloud =WordCloud(width=1300, height=620)wordcloud.add("", name, value, word_size_range=[30, 100], shape='pentagon')#词云图轮廓，有'circle', 'cardioid', 'diamond', 'triangle-forward', 'triangle', 'pentagon', 'star'可选#意思：圆，心形，钻石，三角形，三角形，五角大楼，星星wordcloud.show_config()wordcloud.render('世奇.html')</code></pre><p>运行结果：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181015212705382-1087169515.png" alt="1"></p><p>以上就是我对pyecharts的一些简单例子的使用，总的来说，pyecharts是一个很强大的模块</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 可视化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> echart </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jieba中文分词</title>
+      <link href="/2019/03/19/jieba-ciyun/"/>
+      <url>/2019/03/19/jieba-ciyun/</url>
+      
+        <content type="html"><![CDATA[<p>今日学习了python的词云技术</p><pre><code>from os import pathfrom wordcloud import WordCloudimport matplotlib.pyplot as pltd=path.dirname(__file__)text=open(path.join(d,"data//constitution.txt")).read()# 步骤3-2：设置一张词云图对象wordcloud = WordCloud(background_color="white", max_font_size=40).generate(text)# 步骤4-1：创建一个图表画布plt.figure()# 步骤4-2：设置图片plt.imshow(wordcloud, interpolation="bilinear")# 步骤4-3：取消图表x、y轴plt.axis("off")# 显示图片plt.show()</code></pre><p>结果如下：这是没有背景图的词云</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181013094636318-1518808863.png" alt="1"></p><p>接下来这个是爱丽丝漫游小说的词云</p><pre><code>from os import pathfrom PIL import Imageimport numpy as npfrom wordcloud import WordCloudimport matplotlib.pyplot as pltd=path.dirname(__file__)text=open(path.join(d,"data//alice.txt")).read()alice_mask = np.array(Image.open(path.join(d, "data/alice_mask.png")))wordcloud=WordCloud(background_color="white",max_words=2000,mask=alice_mask)wordcloud.generate(text)wordcloud.to_file(path.join(d,"images//alice_word.png"))</code></pre><p>用英文做词云很简单，不需要很麻烦的分词技术，用wordcloud模块就可以简单实现</p><p>运行结果如下</p><p>背景图：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181013095221225-704742962.png" alt="1"></p><p>结果:</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181013095152050-940671331.png" alt="1"></p><p>最后是中文词云，中文词云就比较麻烦了，得用到jieba模块的分词技术，还得筛选</p><pre><code>import jiebafrom os import path  #用来获取文档的路径#词云from PIL import Imageimport numpy as  npimport matplotlib.pyplot as plt#词云生成工具from wordcloud import WordCloud,ImageColorGenerator#需要对中文进行处理import matplotlib.font_manager as fm#背景图bg=np.array(Image.open("data/4.jpg"))#获取当前的项目文件加的路径d=path.dirname(__file__)#读取停用词表stopwords_path='data/alice.txt'#添加需要自定以的分词jieba.add_word("侯亮平")#读取要分析的文本text_path="data//sanguo.txt"#读取要分析的文本，读取格式text=open(path.join(d,text_path),encoding="utf8").read()#定义个函数式用于分词def jiebaclearText(text):    #定义一个空的列表，将去除的停用词的分词保存    mywordList=[]    #进行分词    seg_list=jieba.cut(text,cut_all=False)    #将一个generator的内容用/连接    listStr='/'.join(seg_list)    #打开停用词表    f_stop=open(stopwords_path,encoding="utf8")    #读取    try:        f_stop_text=f_stop.read()    finally:        f_stop.close()#关闭资源    #将停用词格式化，用\n分开，返回一个列表    f_stop_seg_list=f_stop_text.split("\n")    #对默认模式分词的进行遍历，去除停用词    for myword in listStr.split('/'):        #去除停用词        if not(myword.split()) in f_stop_seg_list and len(myword.strip())&gt;1:            mywordList.append(myword)    return ' '.join(mywordList)text1=jiebaclearText(text)#生成wc=WordCloud(    background_color="white",    max_words=150,    mask=bg,            #设置图片的背景    max_font_size=60,    random_state=42,    font_path='C:/Windows/Fonts/simkai.ttf'   #中文处理，用系统自带的字体    ).generate(text1)#为图片设置字体my_font=fm.FontProperties(fname='C:/Windows/Fonts/simkai.ttf')#产生背景图片，基于彩色图像的颜色生成器image_colors=ImageColorGenerator(bg)#开始画图plt.imshow(wc,interpolation="bilinear")#为云图去掉坐标轴plt.axis("off")#画云图，显示#plt.figure()plt.show()#为背景图去掉坐标轴plt.axis("off")plt.imshow(bg,cmap=plt.cm.gray)#plt.show()#保存云图wc.to_file("data/sanguo.png")</code></pre><p>运行结果：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181013095531710-1842021476.png" alt="1"></p><p>可以看出，三国前20回里，吕布，曹操，玄德等词出现的最多</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 词云 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jieba </tag>
+            
+            <tag> 分词 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>echart数据过多</title>
+      <link href="/2019/02/09/echart-pie/"/>
+      <url>/2019/02/09/echart-pie/</url>
+      
+        <content type="html"><![CDATA[<p>echart中数据过多可视化的数据。。一言难尽</p><p>如图所示：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201810/1471003-20181016212350204-174700797.png" alt="1"></p><p>这展示的是个什么鬼哦，得将数据处理一下。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 可视化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> echart </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>scrapy中伪装头的使用</title>
+      <link href="/2019/02/09/scrapy-daili/"/>
+      <url>/2019/02/09/scrapy-daili/</url>
+      
+        <content type="html"><![CDATA[<p>现在网站大部分都是反爬虫技术，最简单就是加代理，写了一个代理小程序。</p><pre><code># -*- coding: utf-8 -*-#__author__ = "雨轩恋i"#__date__ = "2018年10月30日"# 导入random模块import random# 导入useragent用户代理模块中的UserAgentMiddleware类from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware# RotateUserAgentMiddleware类，继承 UserAgentMiddleware 父类# 作用：创建动态代理列表，随机选取列表中的用户代理头部信息，伪装请求。#       绑定爬虫程序的每一次请求，一并发送到访问网址。# 发爬虫技术：由于很多网站设置反爬虫技术，禁止爬虫程序直接访问网页，#             因此需要创建动态代理，将爬虫程序模拟伪装成浏览器进行网页访问。class RotateUserAgentMiddleware(UserAgentMiddleware):    def __init__(self, user_agent=''):        self.user_agent = user_agent    def process_request(self, request, spider):        #这句话用于随机轮换user-agent        ua = random.choice(self.user_agent_list)        if ua:            # 输出自动轮换的user-agent            print(ua)            request.headers.setdefault('User-Agent', ua)    # the default user_agent_list composes chrome,I E,firefox,Mozilla,opera,netscape    # for more user agent strings,you can find it in http://www.useragentstring.com/pages/useragentstring.php    # 编写头部请求代理列表    user_agent_list = [\        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"\        "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",\        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",\        "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",\        "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1",\        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5",\        "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5",\        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",\        "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",\        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",\        "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",\        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",\        "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",\        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",\        "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",\        "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",\        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",\        "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"       ]</code></pre><p>可以在自己的scrapy爬虫程序中加入这个程序，每次动态的使用代理，将爬虫程序伪装成浏览器，这样就不会被网站禁止了</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> scrapy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>知乎热门话题的爬取</title>
+      <link href="/2019/01/15/zhihu-zhuaqu/"/>
+      <url>/2019/01/15/zhihu-zhuaqu/</url>
+      
+        <content type="html"><![CDATA[<p>本例子是参考崔老师的Python3网络爬虫开发实战写的</p><p>看网页界面：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181211113235435-373289408.png" alt="1"></p><p>热门话题都在 explore-feed feed-item的div里面</p><p>源码如下：</p><pre><code>import requestsfrom pyquery import PyQuery as pqurl='https://www.zhihu.com/explore'   #今日最热#url='https://www.zhihu.com/explore#monthly-hot'   #本月最热headers={    'User-Agent':"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5",}html=requests.get(url,headers=headers).textdoc=pq(html)#print(doc)items=doc('.explore-feed.feed-item').items()for item in items:    question=item.find('h2').text()    #获取问题    print(question)    author=item.find('.author-link').text()    #获取作者    print(author)    answer=pq(item.find('.content').html()).text()    #获取答案（老师写的没看懂，可能需要jquery知识）    print(answer)    print('===='*10)    answer1=item.find('.zh-summary').text()    #自己写的获取答案。。。    print(answer1)    #第一种写入方法    file=open('知乎.txt','a',encoding='utf-8')    file.write('\n'.join([question,author,answer]))    file.write('\n'+'****'*50+'\n')    file.close()    #第二种写入方法 不需要写关闭方法    with open('知乎.txt','a',encoding='utf-8') as fp:        fp.write('\n'.join([question, author, answer]))        fp.write('\n' + '****' * 50 + '\n')</code></pre><p>运行结果如下：</p><p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img2018.cnblogs.com/blog/1471003/201812/1471003-20181211113450728-531165335.png" alt="1"></p><p>不过比较奇怪的地方是 url为今日最热和本月最热 所爬取的结果一模一样。。而且都只能爬下五个div里面的东西，可能是因为知乎是动态界面。需要用到selenium吧</p><p>还有就是</p><p>answer=pq(item.find(‘.content’).html()).text()<br>#获取答案（老师写的没看懂，可能需要jquery知识）<br>这行代码没有看懂。。。。</p><p>还得学习jQuery</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> 知乎 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>numpy数组的使用</title>
+      <link href="/2019/01/09/numpy-shiyong/"/>
+      <url>/2019/01/09/numpy-shiyong/</url>
+      
+        <content type="html"><![CDATA[<p>机器学习的最基础模块就是numpy模块了，而numpy模块中的数组操作又是重中之重，所以我们要把数组的各种方法弄得明明白白的，以下就是数组的一些常用方法</p><p>1.创建各种各样的数组：</p><pre><code>import numpy as npimport matplotlib.pyplot as pltprint(np.zeros(10))  #一维全零数组print(np.zeros((3,3),dtype=np.int))  #多维tupple数组  3行3列  可以加数据类型print(np.ones(10))   #一维全1数组print(np.ones((4,4)))   #多维全1数组print(np.full((3,5),8))  #可以指定数组元素的值print(np.identity(4))   #创建单位矩阵print(np.eye(4,4,1))    #4行4列单位矩阵 对角线从下标1开始print(np.array([1,23,4,'ltf','fjf']))   #可以随便传入数据  一维数组print(np.array([[1,2,3],['ltf','lsq','fjf'],['男','女','人妖']]))   #多维数组，随便定义、a=np.array([[1,2,3],[4,3,6]])b=np.full_like(a,3.2)c=np.ones_like(a)print(b)print(c)#根据一个向量创建斜对角线方阵 也可以指定对角线位置arr2d=np.diag([1,2,3,4])print(arr2d)print(np.arange(1,6))  #类似于range 不包含上界print(np.arange(1,10,2))   #开始 结束 步长print(np.linspace(1,10,4))  #开始 结束 个数print(np.logspace(1,4,4))     #分为4个等分点，形成数组【1,2,3,4】然后形成 对数的底数的指数print(np.logspace(1,5,5,base=2))  #指定对数为2#创建坐标系 其实可以用plt.show()x=np.linspace(0,1,5)y=np.linspace(0,1,3)xv,yv=np.meshgrid(x,y)print(xv)print(yv)plt.plot(xv,yv,'^')plt.show()#指数图x=np.arange(-5,5,0.1)y=np.power(2,x)#print(y)plt.plot(x,y)#对数图x=np.power(2,x)y=np.log2(x)plt.plot(x,y)plt.show()x1=np.arange(1,5,1)y1=np.power(x1,3)  #x1的3次方print(y1)x2=np.array([1,8,27,64])y2=np.power(x2,1/3)  #x2的1/3次方print(y2)</code></pre><p>2.数组的复制等各种操作</p><pre><code>import numpy as np#1  赋值 改变原数组a=np.array([1,2,3,4,5])b=ab[0]=100print(b)print(a)#2 拷贝 不改变原数组a1=np.array([1,2,3,4,5])b1=np.copy(a1)b1[0]=20print(a1)print(b1)#3  修改arry=np.array([1,2,3,4,5])#arry[2]=10arry[0:2]=8  #包头不包尾print(arry)arr1=np.array([[1,2,3,4],[5,6,7,8]])print(arr1.T)  #数组的转置arr1.shape=4,2print(arr1)    #简单分隔#4 分隔arr2=np.arange(0,20,1)print(arr2.reshape(4,5))newarr2=arr2.reshape(4,5)newarr2[0:2,0]=8  #0行1行 的0列 为8print(newarr2)#5newarr3=np.reshape(newarr2,(1,-1))  #行数为1,  列数 待定print(newarr3)newarr4=np.reshape(newarr2,(-1,1))  #列数为1， 行数 待定print(newarr4)newarr5=newarr3[0][:,np.newaxis]   #取第一行 即一维数组 在变成一列print(newarr5)#6 二维数组转一维数组arr2d=np.arange(1,21,1).reshape(4,5) #4行5列print(arr2d)arr2d1=np.ravel(arr2d)print(arr2d1)  #arr2d1和arr2d共享同一块内存print(arr2d.flatten())   #不共享内存#7 resize使用arrresize=np.resize(arr2d,(5,2))  #5行2列  本来有20个元素 只取其中的10个也可以 不像reshape必须全取print(arrresize)#8 转置  多维转换置换 arr3d=np.arange(1,28,1).reshape(3,3,3)print(arr3d)arr3d1=np.transpose(arr3d)print(arr3d1)</code></pre><p>3.数组的修改等各种操作</p><pre><code>import numpy as np#1.访问二维数组a=np.arange(1,16,1).reshape(3,5) #3行5列数组print(a)print(a[1])  #访问第一行print(a[1,1])  #访问第一行第一列的元素print(a[1][1])  #访问第一行第一列的元素#2.访问二维数组部分元素print('-'*20)b=np.arange(1,16,1).reshape(3,5) #3行5列二维数组print(b)print(b[0:1,2:4]) #第一行下标为2和下标为3的元素print(b[:,3])     #所有行下标为3的列数的所有元素print(b[:,2:5])   #所有行，2,3,4列元素#3.删除元素print('-'*20)c=np.arange(1,16,1).reshape(3,5) #3行5列二维数组print(c)print(np.delete(c,1))  #删除行号 返回一位数组print(np.delete(c,[2,3,8,9]))  #返回一位数组 删除下标为2,3,8,9的元素#4.删除列元素print('-'*20)d=np.arange(1,16,1).reshape(3,5) #3行5列二维数组print(d)print(np.delete(d,1,axis=0))  #删除下标为1这一行print(np.delete(d,[2,3],axis=1))  #删除下标为2和3 的这两列#5.插入元素print('-'*20)e=np.array([[1,2],[3,4],[5,6]])print(e)print(np.insert(e,1,5)) #返回一维数组 把5插入到1号索引后print(np.insert(e,1,5,axis=1))  #插入一列 该列元素全为5print(np.insert(e,1,[0,2,5],axis=1)) #插入一列 为0,2,5print(np.insert(e,len(e),[[7,8]],axis=0))  #在最后一列插入一行print(np.c_[e,np.array([1,1,1])]) #在最后一行后面加一列print(np.append(e,[[7,8]],axis=0))  #append追加一列</code></pre><p>4.数组的组合拼接等等</p><pre><code>import numpy as np#1.数组的行拼接a=np.array([[1,2],[3,4]])b=np.array([[5,6]])c=np.concatenate((a,b),axis=0)  #axis=0 按行d=np.vstack((a,b))  #行 方法print(c)print(d)#2.数组的列拼接a=np.array([[1,2],[3,4]])b=np.array([[5],[6]])c=np.concatenate((a,b),axis=1)  #axis=1 按列 要求具有同样的列数d=np.hstack((a,b))  #列方法print(c)print(d)#3.竖直方向将二维数组拆分成若干个数组a=np.arange(1,21,1).reshape(4,5)b=np.split(a,2)c=np.vsplit(a,2)print(b)print(c)#4.水平方向将二维数组拆分成若干个数组a=np.arange(1,21,1).reshape(4,5)b=np.hsplit(a,5)print(b)</code></pre><p>5.数组的查找，排序，统计</p><pre><code>import numpy as np#1.检查符合条件的元素a=np.array([1,0,0,3,4,5,0,8])b=np.nonzero(a)print(b)  #不为0的下标c=a[b]print(c)  #输出不为0的元素 1,3,4,5,8#2.二维数组查找a=np.array([[1,2,0],[4,0,6],[0,8,9]])b=np.nonzero(a)c=a[b]print(c)   #输出一维数组1,2,4,6,8,9#3.查找指定条件a=np.arange(10)print(a)b=np.where(a&gt;5)print(a[b])  #查找大于5的#4.返回条件为truea=np.arange(5)b=np.array([True,False,True,True,False])print(a[b]) #输出0,2,3print(b[a])#5.返回指定索引的若干个元素a=np.array([4,3,5,7,6,8])b=np.take(a,[0,1,4]) #返回索引为0,1,4的元素print(b)#5.数组排序a=np.arange(5)print(a[::-1])  #倒序，，-1指定步长为-1 倒数b=np.array([3,4,1,8,4,9,5,6,9])print(np.sort(b))  #一维数组排序a=np.array([[3,1,5],[2,4,0]])print(a)b=np.sort(a,axis=0) #沿着行索引增加方向排序,也就是对每一列排序print(b)c=np.sort(a,axis=1) #沿着列索引增加方向排序,也就是对每一行排序print(c)#5.分界线排序a=np.array([30,20,40,50,10,80,50,40,90,76])b=np.partition(a,0)print(b) #小于30的在左边 大于30的在右边 等于也在右边c=np.partition(a,6)print(c)  #小于50的在左边 大于50的在右边 等于也在右边#6.数组统计a=np.array([1,3,6,2,5,9,8,10,4])print(a.max())  #最大值print(np.max(a))  #最大值print(np.min(a))  #最小值a=np.arange(1,11,1).reshape(2,5) #2行5列2维数组print(a)print(np.max(a)) #所有元素里面的最大值print(np.max(a,axis=0)) #行索引 找出每一列的最大值print(np.max(a,axis=1)) #列索引 找出每一行的最大值a=np.array([[1,3,9],[2,5,4],[6,7,8]])print('-'*20)print(np.max(a,axis=0)) #行索引 找出每一列的最大值print(np.max(a,axis=1)) #列索引 找出每一行的最大值#查找极值元素的索引a=np.array([1,2,0,4,5,3,7,9])print(np.argmax(a)) #索引号 7print(np.argmin(a)) #索引号 2a=np.array([[1,2,3],[6,5,4],[9,7,8]])  #3行3列print(a)print(np.argmax(a))print(np.argmax(a,axis=0)) #每一列最大元素的索引print(np.argmax(a,axis=1)) #每一行最大元素的索引#计算数组平均值a=np.arange(1,13,1).reshape(3,4)print(a)print(np.mean(a)) #输出 所有数的和的平均值print(np.mean(a,axis=0)) #每一列的平均值print(np.mean(a,axis=1)) #每一行的平均值#计算数组加权平均值a=np.arange(1,11)print(a) #输出1-11的十个数print(np.mean(a))  #没加权重b=np.average(a,weights=np.array([1,3,1,0,0,1,1,0,1,2]))  #这是加了权重print(b)</code></pre><p>附上GitHub地址：</p><p><a href="https://github.com/tyutltf/numpy_array_basic" target="_blank" rel="noopener">https://github.com/tyutltf/numpy_array_basic</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 爬虫 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> 知乎 </tag>
             
         </tags>
       
