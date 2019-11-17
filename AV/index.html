@@ -54,21 +54,6 @@
 
     
     
-        <script>
-            (function(){
-                var bp = document.createElement('script');
-                var curProtocol = window.location.protocol.split(':')[0];
-                if (curProtocol === 'https') {
-                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-                }
-                else {
-                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                }
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(bp, s);
-            })();
-        </script>
-    
 
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
@@ -1040,47 +1025,8 @@ $(function () {
 
     <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
     
-    <script type="text/javascript">
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
-        }
-    </script>
-    
 
     <!-- 在线聊天工具  洪卫 shw2018 add 2019.09.11 -->
-    
-    <script src="//code.tidio.co/xxxxxxxxxxxxxxxxxxxxxxxxxxx.js"></script>
-    <!--  在线聊天位置自定义  洪卫 shw2018 add 2019.09.13  -->
-    <script>
-        $(document).ready(function () {
-
-            setInterval(change_Tidio, 50);
-            function change_Tidio() {
-
-                var tidio = $("#tidio-chat iframe");
-                if (tidio.css("display") == "block" && $(window).width() > 977) {
-                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll").css("display") == "none" && $(window).width() > 977) > 0 ? "-40px" : ($("div.toc-title").length && $(window).width() > 977) > 0 ? "80px" : "20px";
-                    document.getElementById("tidio-chat-iframe").style.right = "-15px";
-                    document.getElementById("tidio-chat-iframe").style.height = parseInt(tidio.css("height")) >= 520 ? "520px" : tidio.css("height");
-                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
-                }
-                else if (tidio.css("display") == "block" && $(window).width() > 601 && $(window).width() < 992) {
-                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll").css("display") == "none" && 601 < $(window).width() < 992) > 0 ? "-40px" : "20px";
-                    document.getElementById("tidio-chat-iframe").style.right = "-15px";
-                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
-                }
-                else if (tidio.css("display") == "block" && $(window).width() < 601 && parseInt(tidio.css("height")) < 230) {
-                    document.getElementById("tidio-chat-iframe").style.bottom = ($("div#backTop.top-scroll").css("display") == "none" && $(window).width() < 601) > 0 ? "-10px" : "45px";
-                    document.getElementById("tidio-chat-iframe").style.zIndex = "997";
-                }
-
-                if (tidio.css("display") == "block" && $(window).width() < 601 && parseInt(tidio.css("height")) >= 230) {
-                    document.getElementById("tidio-chat-iframe").style.zIndex = "998";
-                }
-            }
-        }); 
-    </script>
     
 
     <!-- 背景 canvas-nest  洪卫 shw 2018  add 2019.09.15-->
@@ -1107,22 +1053,11 @@ $(function () {
     
 
     <!-- 天气接口控件 洪卫 shw2018 add 2019.09.09 -->
-    
-    <!-- tyutltf_weither -->
-<script type="text/javascript">
-    WIDGET = { FID: 'Mkevsgzb5I' }
-</script>
+    <script type="text/javascript">
+        WIDGET = { FID: '1tFpFZ5Mtj' }
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
-<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
-
-<script type="=text/javascript">
-     var windowWidth=$(window).width();
-     if (windowWidth>768){
-         document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');'
-')
-}
-</script>
-    
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
+<script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
 
 </html>
