@@ -268,34 +268,6 @@
   </entry>
   
   <entry>
-    <title>pyechart使用</title>
-    <link href="https://tyutltf.github.io/2019/03/19/pyechart/"/>
-    <id>https://tyutltf.github.io/2019/03/19/pyechart/</id>
-    <published>2019-03-19T03:01:15.000Z</published>
-    <updated>2019-11-10T13:20:19.066Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;由于需要在项目中展示数据，查了查资料发现，pyecharts模块在网页数据展示方面有很大优势，所以就学了点pyechas&lt;/p&gt;
-&lt;p&gt;参考博客：&lt;/p&gt;
-&lt;p&gt;Python：数据可视化pyecharts的使用 - JYRoy - 博客园  &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="可视化" scheme="https://tyutltf.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
-    
-    
-      <category term="echart" scheme="https://tyutltf.github.io/tags/echart/"/>
-    
-  </entry>
-  
-  <entry>
     <title>jieba中文分词</title>
     <link href="https://tyutltf.github.io/2019/03/19/jieba-ciyun/"/>
     <id>https://tyutltf.github.io/2019/03/19/jieba-ciyun/</id>
@@ -323,6 +295,34 @@ import matplotlib.pyplot as
       <category term="jieba" scheme="https://tyutltf.github.io/tags/jieba/"/>
     
       <category term="分词" scheme="https://tyutltf.github.io/tags/%E5%88%86%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pyechart使用</title>
+    <link href="https://tyutltf.github.io/2019/03/19/pyechart/"/>
+    <id>https://tyutltf.github.io/2019/03/19/pyechart/</id>
+    <published>2019-03-19T03:01:15.000Z</published>
+    <updated>2019-11-10T13:20:19.066Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;由于需要在项目中展示数据，查了查资料发现，pyecharts模块在网页数据展示方面有很大优势，所以就学了点pyechas&lt;/p&gt;
+&lt;p&gt;参考博客：&lt;/p&gt;
+&lt;p&gt;Python：数据可视化pyecharts的使用 - JYRoy - 博客园  &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="可视化" scheme="https://tyutltf.github.io/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+    
+      <category term="echart" scheme="https://tyutltf.github.io/tags/echart/"/>
     
   </entry>
   
